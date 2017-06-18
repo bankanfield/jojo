@@ -8,7 +8,7 @@ class SideBarr extends Component {
     render() {
         return (
             <ButtonGroup vertical>
-                <Button onClick={()=>this.props.CAction1(this.props.clickk)}>Create New Form</Button>
+                <Button onClick={()=>this.props.caction1(this.props.clickk)}>Create New Form</Button>
                 <Button>ADD</Button>
                 <Button>CANCEL</Button>
                 <p>{this.props.clickk}</p>
