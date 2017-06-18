@@ -9,5 +9,16 @@ import { createStore } from "redux";
 import reducer from "./reducer/reducerindex.js";
 
 
-ReactDOM.render(<Provider store={createStore(reducer)}><App /></Provider>, document.getElementById('root'));
+ReactDOM.render(
+  <Provider
+    store={
+      createStore(
+        reducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+        )
+      }>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
 registerServiceWorker();
